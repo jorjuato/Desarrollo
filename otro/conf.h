@@ -1,0 +1,270 @@
+// INCLUDE conf.h
+//	prog Desarrollo.c
+
+
+
+
+//============================================================================================================//
+//		DEFINICIONES DE CONSTANTES PARA LOS GENES SEÑAL
+/*
+#define		GENSENAL0_AFF0
+#define 	GENSENAL0_AFF1
+#define 	GENSENAL0_AFF2		
+#define 	GENSENAL0_AFF3		
+#define 	GENSENAL0_AFF4	
+#define		GENSENAL0_UMB0
+#define		GENSENAL0_UMB1
+#define		GENSENAL0_UMB2
+#define		GENSENAL0_UMB3
+#define		GENSENAL0_UMB4
+#define		GENSENAL0_COEF_DIF
+
+
+#define		GENSENAL1_AFF0
+#define 	GENSENAL1_AFF1
+#define 	GENSENAL1_AFF2		
+#define 	GENSENAL1_AFF3		
+#define 	GENSENAL1_AFF4	
+#define		GENSENAL1_UMB0
+#define		GENSENAL1_UMB1
+#define		GENSENAL1_UMB2
+#define		GENSENAL1_UMB3
+#define		GENSENAL1_UMB4
+#define		GENSENAL1_COEF_DIF
+
+#define		GENSENAL2_AFF0
+#define 	GENSENAL2_AFF1
+#define 	GENSENAL2_AFF2		
+#define 	GENSENAL2_AFF3		
+#define 	GENSENAL2_AFF4	
+#define		GENSENAL2_UMB0
+#define		GENSENAL2_UMB1
+#define		GENSENAL2_UMB2
+#define		GENSENAL2_UMB3
+#define		GENSENAL2_UMB4
+#define		GENSENAL2_COEF_DIF
+
+#define		GENSENAL3_AFF0
+#define 	GENSENAL3_AFF1
+#define 	GENSENAL3_AFF2		
+#define 	GENSENAL3_AFF3		
+#define 	GENSENAL3_AFF4	
+#define		GENSENAL3_UMB0
+#define		GENSENAL3_UMB1
+#define		GENSENAL3_UMB2
+#define		GENSENAL3_UMB3
+#define		GENSENAL3_UMB4
+#define		GENSENAL3_COEF_DIF
+
+#define		GENSENAL4_AFF0
+#define 	GENSENAL4_AFF1
+#define 	GENSENAL4_AFF2		
+#define 	GENSENAL4_AFF3		
+#define 	GENSENAL4_AFF4	
+#define		GENSENAL4_UMB0
+#define		GENSENAL4_UMB1
+#define		GENSENAL4_UMB2
+#define		GENSENAL4_UMB3
+#define		GENSENAL4_UMB4
+#define		GENSENAL4_COEF_DIF
+
+//============================================================================================================//
+//		DEFINICIONES DE CONSTANTES PARA LOS GENES REGULADORES
+
+
+#define		GENREGULADOR0_AFF0
+#define 	GENREGULADOR0_AFF1
+#define 	GENREGULADOR0_AFF2		
+#define 	GENREGULADOR0_AFF3		
+#define 	GENREGULADOR0_AFF4
+#define		GENREGULADOR0_AFF5
+#define 	GENREGULADOR0_AFF6
+#define 	GENREGULADOR0_AFF7		
+#define 	GENREGULADOR0_AFF8		
+#define 	GENREGULADOR0_AFF9	
+#define		GENREGULADOR0_UMB0
+#define		GENREGULADOR0_UMB1
+#define		GENREGULADOR0_UMB2
+#define		GENREGULADOR0_UMB3
+#define		GENREGULADOR0_UMB4
+#define		GENREGULADOR0_UMB5
+#define		GENREGULADOR0_UMB6
+#define		GENREGULADOR0_UMB7
+#define		GENREGULADOR0_UMB8
+#define		GENREGULADOR0_UMB9
+#define		GENREGULADOR0_DEGRD
+
+#define		GENREGULADOR1_AFF0
+#define 	GENREGULADOR1_AFF1
+#define 	GENREGULADOR1_AFF2		
+#define 	GENREGULADOR1_AFF3		
+#define 	GENREGULADOR1_AFF4
+#define		GENREGULADOR1_AFF5
+#define 	GENREGULADOR1_AFF6
+#define 	GENREGULADOR1_AFF7		
+#define 	GENREGULADOR1_AFF8		
+#define 	GENREGULADOR1_AFF9	
+#define		GENREGULADOR1_UMB0
+#define		GENREGULADOR1_UMB1
+#define		GENREGULADOR1_UMB2
+#define		GENREGULADOR1_UMB3
+#define		GENREGULADOR1_UMB4
+#define		GENREGULADOR1_UMB5
+#define		GENREGULADOR1_UMB6
+#define		GENREGULADOR1_UMB7
+#define		GENREGULADOR1_UMB8
+#define		GENREGULADOR1_UMB9
+#define		GENREGULADOR1_DEGRD		
+
+#define		GENREGULADOR2_AFF0
+#define 	GENREGULADOR2_AFF1
+#define 	GENREGULADOR2_AFF2		
+#define 	GENREGULADOR2_AFF3		
+#define 	GENREGULADOR2_AFF4
+#define		GENREGULADOR2_AFF5
+#define 	GENREGULADOR2_AFF6
+#define 	GENREGULADOR2_AFF7		
+#define 	GENREGULADOR2_AFF8		
+#define 	GENREGULADOR2_AFF9	
+#define		GENREGULADOR2_UMB0
+#define		GENREGULADOR2_UMB1
+#define		GENREGULADOR2_UMB2
+#define		GENREGULADOR2_UMB3
+#define		GENREGULADOR2_UMB4
+#define		GENREGULADOR2_UMB5
+#define		GENREGULADOR2_UMB6
+#define		GENREGULADOR2_UMB7
+#define		GENREGULADOR2_UMB8
+#define		GENREGULADOR2_UMB9
+#define		GENREGULADOR2_DEGRD	
+
+#define		GENREGULADOR3_AFF0
+#define 	GENREGULADOR3_AFF1
+#define 	GENREGULADOR3_AFF2		
+#define 	GENREGULADOR3_AFF3		
+#define 	GENREGULADOR3_AFF4
+#define		GENREGULADOR3_AFF5
+#define 	GENREGULADOR3_AFF6
+#define 	GENREGULADOR3_AFF7		
+#define 	GENREGULADOR3_AFF8		
+#define 	GENREGULADOR3_AFF9	
+#define		GENREGULADOR3_UMB0
+#define		GENREGULADOR3_UMB1
+#define		GENREGULADOR3_UMB2
+#define		GENREGULADOR3_UMB3
+#define		GENREGULADOR3_UMB4
+#define		GENREGULADOR3_UMB5
+#define		GENREGULADOR3_UMB6
+#define		GENREGULADOR3_UMB7
+#define		GENREGULADOR3_UMB8
+#define		GENREGULADOR3_UMB9
+#define		GENREGULADOR3_DEGRD	
+
+#define		GENREGULADOR4_AFF0
+#define 	GENREGULADOR4_AFF1
+#define 	GENREGULADOR4_AFF2		
+#define 	GENREGULADOR4_AFF3		
+#define 	GENREGULADOR4_AFF4
+#define		GENREGULADOR4_AFF5
+#define 	GENREGULADOR4_AFF6
+#define 	GENREGULADOR4_AFF7		
+#define 	GENREGULADOR4_AFF8		
+#define 	GENREGULADOR4_AFF9	
+#define		GENREGULADOR4_UMB0
+#define		GENREGULADOR4_UMB1
+#define		GENREGULADOR4_UMB2
+#define		GENREGULADOR4_UMB3
+#define		GENREGULADOR4_UMB4
+#define		GENREGULADOR4_UMB5
+#define		GENREGULADOR4_UMB6
+#define		GENREGULADOR4_UMB7
+#define		GENREGULADOR4_UMB8
+#define		GENREGULADOR4_UMB9
+#define		GENREGULADOR4_DEGRD	
+
+#define		GENREGULADOR5_AFF0
+#define 	GENREGULADOR5_AFF1
+#define 	GENREGULADOR5_AFF2		
+#define 	GENREGULADOR5_AFF3		
+#define 	GENREGULADOR5_AFF4
+#define		GENREGULADOR5_AFF5
+#define 	GENREGULADOR5_AFF6
+#define 	GENREGULADOR5_AFF7		
+#define 	GENREGULADOR5_AFF8		
+#define 	GENREGULADOR5_AFF9	
+#define		GENREGULADOR5_UMB0
+#define		GENREGULADOR5_UMB1
+#define		GENREGULADOR5_UMB2
+#define		GENREGULADOR5_UMB3
+#define		GENREGULADOR5_UMB4
+#define		GENREGULADOR5_UMB5
+#define		GENREGULADOR5_UMB6
+#define		GENREGULADOR5_UMB7
+#define		GENREGULADOR5_UMB8
+#define		GENREGULADOR5_UMB9
+#define		GENREGULADOR5_DEGRD	
+
+#define		GENREGULADOR5_AFF0
+#define 	GENREGULADOR6_AFF1
+#define 	GENREGULADOR6_AFF2		
+#define 	GENREGULADOR6_AFF3		
+#define 	GENREGULADOR6_AFF4
+#define		GENREGULADOR6_AFF5
+#define 	GENREGULADOR6_AFF6
+#define 	GENREGULADOR6_AFF7		
+#define 	GENREGULADOR6_AFF8		
+#define 	GENREGULADOR6_AFF9	
+#define		GENREGULADOR6_UMB0
+#define		GENREGULADOR6_UMB1
+#define		GENREGULADOR6_UMB2
+#define		GENREGULADOR6_UMB3
+#define		GENREGULADOR6_UMB4
+#define		GENREGULADOR6_UMB5
+#define		GENREGULADOR6_UMB6
+#define		GENREGULADOR6_UMB7
+#define		GENREGULADOR6_UMB8
+#define		GENREGULADOR6_UMB9
+#define		GENREGULADOR6_DEGRD	
+*/
+//============================================================================================================//
+//		DEFINICIONES DE CONSTANTES PARA LOS GENES ESTRUCTURALES
+
+
+#define		GENEST_DIVISION		'1'
+#define		GENEST_APOPTOSIS	'2'
+#define		GENEST_FIS_MU		'3'
+#define		GENEST_FIS_K		'4'
+#define		GENEST_FIS_GAMMA	'5'
+/*
+#define		GENEST_
+#define		GENEST_
+#define		GENEST_
+#define		GENEST_
+*/
+
+#define 	LARGO		30
+#define 	ALTO		10
+#define 	ANCHO		30
+#define 	MAXGEN_REG	5
+#define 	MAXGEN_SEN	3
+#define 	MAXGEN_EST	2
+#define 	APOPTOSIS	-1
+#define 	DIVISION	1
+#define 	MAX_CEL		1600
+#define 	MIN_CEL		50
+
+/* Ahora debemos definir unos limites razonables para inicializar aleatoriamente los valores de los parámetros
+del modelo. Proceso arduo. Se deben ajustar los rangos de las afinidades, umbrales, tasas de degradación y difusion
+de todas las sustancias.
+*/
+#define AFF		7
+#define UMB		6
+#define EFF		5
+#define DEGR		5
+#define DIF		90
+#define SENAL		2
+#define UMB_ACT		2
+#define T_SIMULACION	500
+#define INTERVALO	1
+
+

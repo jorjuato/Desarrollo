@@ -1,0 +1,30 @@
+#!/bin/bash
+rm *.png datos* 
+make graficos # > /dev/null 
+echo "Finalizada compilacion"
+echo "INICIO DE SIMULACION"
+./graficos_difusion_num_2D
+echo "FIN DE SIMULACION"
+#for img in *.png
+#do
+#  convert $img $img.jpg >/dev/null
+#  echo "convirtiendo imagen " $img
+#  echo 
+#done
+
+#ls *.png |sort -n | 
+#rm *{*
+#convert -delay 20 *.png difusion.gif &
+echo "Fin Conversion"
+tar cvzf difusion_png.tgz *.png
+
+#convert *.png *.jpg
+echo "Finalizado empaquetamiento en tar"
+echo
+echo "Inicio compresión del video"
+
+#mencoder 'mf://*.jpg' -mf type=jpg:fps=5 -ovc copy -oac copy -o difusion.avi > /dev/null 
+#rm *png *jpg
+#mplayer difusion.avi > /dev/null &
+#gedit datos* &
+#gimp &

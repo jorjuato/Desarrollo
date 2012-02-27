@@ -1,0 +1,6 @@
+#!/bin/bash
+make leer_arch 
+echo "Finalizada compilacion"
+echo "INICIO DE SIMULACION"
+./tumor_contorno
+echo "FIN DE SIMULACION"

@@ -1,0 +1,9 @@
+#!/bin/bash
+rm *png desarrollo_difu
+make desarrollo_graficos
+echo "Fin compilacion"
+echo ""
+echo "INICIANDO SIMULACION"
+./desarrollo_difu
+echo "Fin simulacion"
+#gedit datos_celulas datos_produccion 

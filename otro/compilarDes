@@ -1,0 +1,9 @@
+#!/bin/bash
+rm datos* desarruto
+g++ -g desarrollo.cpp -o desarruto
+echo "Fin compilacion"
+echo ""
+echo "INICIANDO SIMULACION"
+./desarruto
+echo "Fin simulacion"
+gedit datos_celulas datos_produccion 

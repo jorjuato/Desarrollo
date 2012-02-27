@@ -1,0 +1,6 @@
+#!/bin/bash
+make graficos 
+echo "Finalizada compilacion"
+echo "INICIO DE SIMULACION"
+./tumor_contorno
+echo "FIN DE SIMULACION"
